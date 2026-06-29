@@ -1,0 +1,23 @@
+name: <pipeline-name>
+version: "1.0"
+category: <generated|talking_head|cinematic|...>
+default_checkpoint_policy: guided
+
+orchestration:
+  mode: executive-producer
+  budget_default_usd: 5.00
+  max_revisions_per_stage: 3
+  max_wall_time_minutes: 30
+
+compatible_playbooks:
+  - <playbook-name>
+
+stages:
+  - name: <stage_1>
+    skill: pipelines/<pipeline>/<stage>-director
+    produces: [<artifact>]
+    tools_available: [<tools>]
+    success_criteria:
+      - <criterion>
+    checkpoint_required: true
+    human_approval_default: false

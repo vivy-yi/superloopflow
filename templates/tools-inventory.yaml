@@ -1,0 +1,27 @@
+# .tools-inventory.yaml — first-class declaration of agentic tools
+agentic_tools:
+  omc:
+    version: "4.4.0+"
+    required: true
+    purpose: "Multi-agent orchestration"
+    fallback: "manual team mode"
+  ecc:
+    version: "2.0.0+"
+    required: true
+    purpose: "Quality + skills library"
+    fallback: "manual TDD"
+  superpowers:
+    version: "6.0.3+"
+    required: true
+    purpose: "Process discipline"
+    fallback: "skip Phase 1/3"
+  dramatron-workflow:  # this plugin!
+    version: "0.1.0+"
+    required: true
+    purpose: "Execute LOOP.md as commands"
+    fallback: "manual file scaffolding"
+
+language_tools:
+  python:
+    version: "3.11+"
+    required: true

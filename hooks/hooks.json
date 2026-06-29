@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "tool == \"Bash\" && tool_input.command matches \"git commit\"",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Consider running /loop:next to update state.'"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "tool == \"Edit\" && tool_input.file_path matches \"/AGENT_GUIDE.md\"",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'AGENT_GUIDE.md is the main agent contract. Verify changes are consistent with loop:create-agent-guide.'"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# <Project Name> Agent Registry
+# Defines all agent roles and their contracts
+
+agents:
+  <role-name>:
+    purpose: <one-sentence role description>
+    inputs: [<input_list>]
+    outputs: [<output_list>]
+    skills_consumed:
+      - skills/<path>.md
+    tools_invoked:
+      - <tool-name>
+    success_criteria:
+      - <criterion>
