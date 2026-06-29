@@ -5,15 +5,15 @@
     "name": "Dramatron Contributors",
     "url": "https://github.com/dramatron"
   },
-  "description": "Unified LOOP-era development orchestrator. v0.4 uses READ-ONLY plugin discovery. /loop:* commands dynamically bridge to installed plugins by reading their plugin.json + commands + skills frontmatter. NO writes to any third-party plugin directory. v0.4 was created after discovering that v0.3's manifest-protocol approach was too invasive — we now work with what plugin authors already publish.",
+  "description": "Unified LOOP-era development orchestrator. v0.5 uses READ-ONLY plugin discovery. /superloopflow:* commands dynamically bridge to installed plugins by reading their plugin.json + commands + skills frontmatter. NO writes to any third-party plugin directory.",
   "plugins": [
     {
-      "name": "dramatron-workflow",
+      "name": "superloopflow",
       "source": "./",
-      "description": "Unified LOOP-era development entry point. 18 /loop:* commands dynamically bridge to plugins via READ-ONLY discovery. 5 skills for orchestrating agents, skills, code, and agentic tools.",
-      "version": "0.4.0",
+      "description": "Unified LOOP-era development entry point. 22+ /superloopflow:* commands dynamically bridge to plugins via READ-ONLY discovery. 13 skills for orchestrating agents, skills, code, and agentic tools.",
+      "version": "0.5.0",
       "keywords": ["loop", "orchestrator", "read-only", "auto-discovery", "no-modification", "agent", "skill", "ai-assisted-dev"],
-      "homepage": "https://github.com/dramatron/flow-orchestrator"
+      "homepage": "https://github.com/vivy-yi/superloopflow"
     }
   ]
 }
