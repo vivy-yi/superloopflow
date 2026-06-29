@@ -3,13 +3,13 @@ name: implement
 description: Bridge to ANY plugin providing implementation (v0.4 — read-only)
 ---
 
-# /loop:implement (v0.4)
+# /superloopflow:implement (v0.4)
 
 Read-only bridge to any plugin providing implementation capability.
 
 ## What it does
 
-1. Read `.loop-state/capability-registry.yaml` (built by `/loop:discover`)
+1. Read `.loop-state/capability-registry.yaml` (built by `/superloopflow:discover`)
 2. If not built yet, do read-only discovery first
 3. Find providers of "implementation" capability (autopilot, ralph, team, subagent, etc.)
 4. If multiple, ask user to pick. If one, use it.
@@ -39,5 +39,5 @@ Other providers added later will be auto-detected.
 ## Usage
 
 ```
-/loop:implement
+/superloopflow:implement
 ```

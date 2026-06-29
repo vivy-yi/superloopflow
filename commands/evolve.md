@@ -3,7 +3,7 @@ name: evolve
 description: Bridge to ECC /ecc:evolve and Superpowers writing-skills for continuous learning and skill extraction
 ---
 
-# /loop:evolve
+# /superloopflow:evolve
 
 Bridge to **ECC `/ecc:evolve`** and **Superpowers `writing-skills`** — extract patterns from session, evolve into reusable skills.
 
@@ -73,9 +73,9 @@ git commit -m "feat(skills): extract <pattern-name> from session <date>"
 ## Integration
 
 ```
-/loop:review "code review"
+/superloopflow:review "code review"
   ↓ (all clean)
-/loop:evolve "extract patterns from this session"
+/superloopflow:evolve "extract patterns from this session"
   ↓
 skills/INDEX.md updated
 git commit "feat(skills): extract ..."

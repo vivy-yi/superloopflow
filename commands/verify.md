@@ -3,7 +3,7 @@ name: verify
 description: Bridge to Superpowers verification-before-completion skill — pre-completion checklist
 ---
 
-# /loop:verify
+# /superloopflow:verify
 
 Bridge to **Superpowers `verification-before-completion`** skill — run pre-completion checklist to catch over-claims.
 
@@ -28,7 +28,7 @@ Bridge to **Superpowers `verification-before-completion`** skill — run pre-com
 
 - Before declaring a feature "done"
 - Before moving to Phase 7 (continuous learning)
-- After `/loop:ralph` fixes tests
+- After `/superloopflow:ralph` fixes tests
 
 ## When NOT to use
 
@@ -44,7 +44,7 @@ Bridge to **Superpowers `verification-before-completion`** skill — run pre-com
 ## Usage
 
 ```bash
-/loop:verify "I have finished implementing docs/superpowers/plans/2026-06-29-myfeature-plan.md"
+/superloopflow:verify "I have finished implementing docs/superpowers/plans/2026-06-29-myfeature-plan.md"
 ```
 
 ## Exit states
@@ -61,11 +61,11 @@ Bridge to **Superpowers `verification-before-completion`** skill — run pre-com
 ## Integration
 
 ```
-/loop:implement "build the feature"
+/superloopflow:implement "build the feature"
   ↓
-/loop:verify "I finished implementing..."
+/superloopflow:verify "I finished implementing..."
   ↓ (findings)
-/loop:ralph "fix the issues"
+/superloopflow:ralph "fix the issues"
   ↓ (verify clean)
-/loop:review "code review"
+/superloopflow:review "code review"
 ```

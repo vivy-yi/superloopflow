@@ -3,13 +3,13 @@ name: run
 description: Bridge to OMC autopilot for full autonomous execution (idea → working code)
 ---
 
-# /loop:run
+# /superloopflow:run
 
 Bridge to **OMC `autopilot`** — full autonomous execution from idea to working code.
 
 ## What it does
 
-1. Read `.loop-state/capability-registry.yaml` (built by `/loop:discover`)
+1. Read `.loop-state/capability-registry.yaml` (built by `/superloopflow:discover`)
 2. Find OMC's `autopilot` skill/provider
 3. Execute the 5-phase autonomous pipeline:
    - **Phase 0**: Expansion — turn idea into detailed spec
@@ -35,8 +35,8 @@ This command does NOT modify any file in `~/.claude/plugins/`. It only:
 ## Usage
 
 ```
-/loop:run "build me a REST API for a bookstore inventory with CRUD"
-/loop:run "create a CLI tool that tracks daily habits with streak counting"
+/superloopflow:run "build me a REST API for a bookstore inventory with CRUD"
+/superloopflow:run "create a CLI tool that tracks daily habits with streak counting"
 ```
 
 ## Pipeline flow
@@ -49,6 +49,6 @@ Phase 5 (Cleanup) ← Phase 4 (Validation) ← Phase 3 (QA Cycles)
 
 ## Integration with ultragoal
 
-For large multi-goal projects, use `/loop:goal` first to create the goal ledger, then invoke `/loop:run` for execution. The two commands are complementary:
-- `/loop:goal` — durable goal tracking across sessions
-- `/loop:run` — autonomous execution within a session
+For large multi-goal projects, use `/superloopflow:goal` first to create the goal ledger, then invoke `/superloopflow:run` for execution. The two commands are complementary:
+- `/superloopflow:goal` — durable goal tracking across sessions
+- `/superloopflow:run` — autonomous execution within a session

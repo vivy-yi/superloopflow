@@ -3,7 +3,7 @@ name: status
 description: Show the current LOOP state (read .loop-state.json or infer from filesystem)
 ---
 
-# /loop:status
+# /superloopflow:status
 
 Read `.loop-state.json` if it exists, otherwise infer state from filesystem reality.
 
@@ -17,5 +17,5 @@ Read `.loop-state.json` if it exists, otherwise infer state from filesystem real
 ## Usage
 
 ```
-/loop:status
+/superloopflow:status
 ```

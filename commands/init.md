@@ -3,7 +3,7 @@ name: init
 description: Bootstrap a new project — git init, README, .gitignore, .env.example, Makefile
 ---
 
-# /loop:init
+# /superloopflow:init
 
 Bootstrap a new project with the minimum files needed for AI-assisted development.
 
@@ -19,7 +19,7 @@ Bootstrap a new project with the minimum files needed for AI-assisted developmen
 ## Usage
 
 ```
-/loop:init
+/superloopflow:init
 ```
 
 ## Exit state

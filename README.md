@@ -180,40 +180,40 @@ def next_action(state):
 ## 6. Commands (25)
 
 ### Bootstrap
-- `/loop:init` — git init, README, .gitignore, .env.example, Makefile
-- `/loop:setup` — read-only plugin discovery + build registry
-- `/loop:discover` — list all inferred capabilities by phase
-- `/loop:capability <name>` — look up specific capability
-- `/loop:detect-tools` — generate `.tools-inventory.yaml` + run omc-doctor + harness-audit
+- `/superloopflow:init` — git init, README, .gitignore, .env.example, Makefile
+- `/superloopflow:setup` — read-only plugin discovery + build registry
+- `/superloopflow:discover` — list all inferred capabilities by phase
+- `/superloopflow:capability <name>` — look up specific capability
+- `/superloopflow:detect-tools` — generate `.tools-inventory.yaml` + run omc-doctor + harness-audit
 
 ### Loop Controller
-- `/loop:status` — show current state
-- `/loop:next` — decide next phase based on state machine
+- `/superloopflow:status` — show current state
+- `/superloopflow:next` — decide next phase based on state machine
 
 ### Phase 1-3: Discovery (bridged)
-- `/loop:brainstorm` → Superpowers `brainstorming` or OMC `/omc:deep-interview`
-- `/loop:spec` → manual enrichment of brainstorming output
-- `/loop:plan` → Superpowers `writing-plans` skill
+- `/superloopflow:brainstorm` → Superpowers `brainstorming` or OMC `/omc:deep-interview`
+- `/superloopflow:spec` → manual enrichment of brainstorming output
+- `/superloopflow:plan` → Superpowers `writing-plans` skill
 
 ### Phase 4: Meta-Docs (own implementation)
-- `/loop:create-entry-files` — create AGENT_GUIDE.md skeleton
-- `/loop:create-agent-guide` — write AGENT_GUIDE.md
-- `/loop:create-rules` — create .claude/rules/ structure
-- `/loop:create-skills` — create .claude/skills/ structure
-- `/loop:create-pipeline-manifest` — create pipeline_defs/<name>.yaml
-- `/loop:create-agent-registry` — create agents/registry.yaml
+- `/superloopflow:create-entry-files` — create AGENT_GUIDE.md skeleton
+- `/superloopflow:create-agent-guide` — write AGENT_GUIDE.md
+- `/superloopflow:create-rules` — create .claude/rules/ structure
+- `/superloopflow:create-skills` — create .claude/skills/ structure
+- `/superloopflow:create-pipeline-manifest` — create pipeline_defs/<name>.yaml
+- `/superloopflow:create-agent-registry` — create agents/registry.yaml
 
 ### Phase 5-7: Execution & Verification (bridged)
-- `/loop:implement` → OMC `/omc:autopilot` or `/omc-teams`
-- `/loop:ralph` → OMC `/omc:ralph` (persistent fix loop)
-- `/loop:review` → ECC `/ecc:code-review` (or language-specific)
-- `/loop:verify` → Superpowers `verification-before-completion`
-- `/loop:evolve` → ECC `/ecc:evolve` + Superpowers `writing-skills`
+- `/superloopflow:implement` → OMC `/omc:autopilot` or `/omc-teams`
+- `/superloopflow:ralph` → OMC `/omc:ralph` (persistent fix loop)
+- `/superloopflow:review` → ECC `/ecc:code-review` (or language-specific)
+- `/superloopflow:verify` → Superpowers `verification-before-completion`
+- `/superloopflow:evolve` → ECC `/ecc:evolve` + Superpowers `writing-skills`
 
 ### NEW: Loop Engineering Core (v0.5)
-- `/loop:goal` → OMC `ultragoal` — durable multi-goal workflow with ledger
-- `/loop:run` → OMC `autopilot` — full autonomous execution
-- `/loop:harness` → ECC `autonomous-agent-harness` — persistent scheduling + memory
+- `/superloopflow:goal` → OMC `ultragoal` — durable multi-goal workflow with ledger
+- `/superloopflow:run` → OMC `autopilot` — full autonomous execution
+- `/superloopflow:harness` → ECC `autonomous-agent-harness` — persistent scheduling + memory
 
 ---
 
@@ -471,7 +471,7 @@ git commit -m "feat(skills): extract <pattern-name> from session <date>"
 | Phase | Command / Skill | Plugin |
 |-------|-----------------|--------|
 | 0 | `git init` + manual | manual |
-| 0.5 | `/loop:detect-tools` + omc-doctor + harness-audit | OMC + ECC |
+| 0.5 | `/superloopflow:detect-tools` + omc-doctor + harness-audit | OMC + ECC |
 | 1 | `brainstorming` skill or `/omc:deep-interview` | Superpowers / OMC |
 | 2 | Manual (enrich spec) | manual |
 | 3 | `writing-plans` skill | Superpowers |
@@ -582,7 +582,7 @@ Modern AI-assisted development has **four first-class elements**:
 
 ### Tier 2: Domain-specific (200+)
 
-Auto-inferred from plugin names and descriptions. Run `/loop:discover` to see.
+Auto-inferred from plugin names and descriptions. Run `/superloopflow:discover` to see.
 
 ### Tier 3: Project-specific
 
@@ -621,9 +621,9 @@ Declared in `pipeline_defs/<pipeline>.yaml`.
 }
 
 # In Claude Code:
-/loop:setup
-/loop:discover
-/loop:next
+/superloopflow:setup
+/superloopflow:discover
+/superloopflow:next
 ```
 
 ## License

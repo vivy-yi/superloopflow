@@ -15,7 +15,7 @@ description: How to author project meta-documentation (entry files, AGENT_GUIDE,
 
 ## Process
 1. Identify the meta-doc type (entry / guide / rule / skill / manifest / role)
-2. Use the corresponding `/loop:create-*` command
+2. Use the corresponding `/superloopflow:create-*` command
 3. Customize the generated file based on project specifics
 4. Run tests if applicable
 5. Commit with conventional format

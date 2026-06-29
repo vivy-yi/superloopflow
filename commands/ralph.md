@@ -3,7 +3,7 @@ name: ralph
 description: Bridge to OMC /omc:ralph for persistent fix loop — fix failing tests until green
 ---
 
-# /loop:ralph
+# /superloopflow:ralph
 
 Bridge to **OMC `/omc:ralph`** — persistent fix loop that iterates until tests pass or max iterations reached.
 
@@ -35,9 +35,9 @@ Bridge to **OMC `/omc:ralph`** — persistent fix loop that iterates until tests
 ## Usage
 
 ```bash
-/loop:ralph "fix failing tests until green"
-/loop:ralph "fix the authentication bug"
-/loop:ralph "resolve all lint errors"
+/superloopflow:ralph "fix failing tests until green"
+/superloopflow:ralph "fix the authentication bug"
+/superloopflow:ralph "resolve all lint errors"
 ```
 
 ## Exit states
@@ -55,14 +55,14 @@ If ralph hits max iterations:
 2. Verify the test is correct (not the implementation)
 3. Consider whether the spec was wrong
 
-## Integration with /loop:implement
+## Integration with /superloopflow:implement
 
 ```
-/loop:implement "build the feature"
+/superloopflow:implement "build the feature"
   ↓ (tests fail)
-/loop:ralph "fix failing tests"
+/superloopflow:ralph "fix failing tests"
   ↓ (ralph hits wall)
-/loop:review
+/superloopflow:review
   ↓ (review finds issues)
-/loop:ralph "fix review findings"
+/superloopflow:ralph "fix review findings"
 ```

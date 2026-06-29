@@ -3,7 +3,7 @@ name: create-rules
 description: Create 4 common rules + 1 python rule under .claude/rules/
 ---
 
-# /loop:create-rules
+# /superloopflow:create-rules
 
 Implements Phase 4C of LOOP.md — the project rules.
 
@@ -25,5 +25,5 @@ Implements Phase 4C of LOOP.md — the project rules.
 ## Usage
 
 ```
-/loop:create-rules
+/superloopflow:create-rules
 ```

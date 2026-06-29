@@ -1,11 +1,11 @@
 ---
 name: plugin-bridge
-description: How to bridge from /loop:* commands to other plugins using READ-ONLY discovery (v3.0)
+description: How to bridge from /superloopflow:* commands to other plugins using READ-ONLY discovery (v3.0)
 ---
 
 # Plugin Bridge (v3.0)
 
-How `/loop:*` commands delegate to other plugins via **read-only discovery**.
+How `/superloopflow:*` commands delegate to other plugins via **read-only discovery**.
 
 ## Core Principle: NEVER Modify Third-Party Plugin Directories
 
@@ -82,7 +82,7 @@ KEYWORD_TO_PHASE = {
 
 ## When to Add a New Bridge
 
-Add a new `/loop:*` bridge command when:
+Add a new `/superloopflow:*` bridge command when:
 - A LOOP phase is missing a unified entry point
 - Users are confused about which plugin to use
 - Multiple plugins provide similar capabilities
@@ -97,7 +97,7 @@ Add a new `/loop:*` bridge command when:
 
 ❌ **Don't hide errors** — let the underlying command's output surface
 
-## Example: /loop:brainstorm Bridge
+## Example: /superloopflow:brainstorm Bridge
 
 ```bash
 # 1. Read capability registry
@@ -144,15 +144,15 @@ project/
 
 1. **Installation** — via `/plugin install` or local marketplace
 2. **Registration** — in `~/.claude/settings.json` enabledPlugins
-3. **Discovery** — by superloopflow's `/loop:discover`
-4. **Use** — by `/loop:brainstorm`, `/loop:implement`, etc.
+3. **Discovery** — by superloopflow's `/superloopflow:discover`
+4. **Use** — by `/superloopflow:brainstorm`, `/superloopflow:implement`, etc.
 5. **Upgrade** — plugin author updates code
-6. **Re-discovery** — re-run `/loop:discover`
+6. **Re-discovery** — re-run `/superloopflow:discover`
 
 ## How to Add a New Plugin (Zero-Code)
 
 1. Install: `/plugin install <plugin>`
-2. Re-run: `/loop:discover` (now sees the new plugin)
+2. Re-run: `/superloopflow:discover` (now sees the new plugin)
 3. Bridge commands automatically use it (if it provides a needed capability)
 
 No need to modify superloopflow. No need to write a manifest.

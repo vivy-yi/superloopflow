@@ -3,7 +3,7 @@ name: create-agent-registry
 description: Create agents/registry.yaml and per-agent <name>.md role documents
 ---
 
-# /loop:create-agent-registry
+# /superloopflow:create-agent-registry
 
 Implements Phase 4F of LOOP.md — agent registry.
 
@@ -26,5 +26,5 @@ Implements Phase 4F of LOOP.md — agent registry.
 ## Usage
 
 ```
-/loop:create-agent-registry
+/superloopflow:create-agent-registry
 ```

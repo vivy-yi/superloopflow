@@ -3,7 +3,7 @@ name: create-skills
 description: Create meta skills + skills/INDEX.md
 ---
 
-# /loop:create-skills
+# /superloopflow:create-skills
 
 Implements Phase 4D of LOOP.md — the project skills.
 
@@ -25,5 +25,5 @@ Implements Phase 4D of LOOP.md — the project skills.
 ## Usage
 
 ```
-/loop:create-skills
+/superloopflow:create-skills
 ```

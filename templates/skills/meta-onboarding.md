@@ -20,7 +20,7 @@ description: How to handle the first vague user message in a session. Use when a
 3. **Reply with the project brief:**
    - One-sentence identity (from `AGENT_GUIDE.md` > "What This Project Is")
    - Tech stack
-   - Available commands (this plugin's `/loop:*` plus others)
+   - Available commands (this plugin's `/superloopflow:*` plus others)
    - What you CAN do here
    - What you CANNOT do here
 4. **Ask 1-3 clarifying questions** to narrow scope, OR offer 2-3 concrete starting points.

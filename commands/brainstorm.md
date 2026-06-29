@@ -3,13 +3,13 @@ name: brainstorm
 description: Bridge to ANY plugin providing brainstorming (v0.4 — read-only)
 ---
 
-# /loop:brainstorm (v0.4)
+# /superloopflow:brainstorm (v0.4)
 
 Read-only bridge to any plugin providing brainstorming capability.
 
 ## What it does
 
-1. Read `.loop-state/capability-registry.yaml` (built by `/loop:discover`)
+1. Read `.loop-state/capability-registry.yaml` (built by `/superloopflow:discover`)
 2. If not built yet, do read-only discovery first
 3. Find providers of "brainstorming" capability
 4. If multiple, ask user to pick. If one, use it.
@@ -37,5 +37,5 @@ Other providers added later will be auto-detected.
 ## Usage
 
 ```
-/loop:brainstorm
+/superloopflow:brainstorm
 ```

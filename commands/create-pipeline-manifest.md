@@ -3,7 +3,7 @@ name: create-pipeline-manifest
 description: Create pipeline_defs/<pipeline>.yaml with stages, skills, review criteria
 ---
 
-# /loop:create-pipeline-manifest
+# /superloopflow:create-pipeline-manifest
 
 Implements Phase 4E of LOOP.md — pipeline manifests.
 
@@ -29,5 +29,5 @@ Implements Phase 4E of LOOP.md — pipeline manifests.
 ## Usage
 
 ```
-/loop:create-pipeline-manifest
+/superloopflow:create-pipeline-manifest
 ```

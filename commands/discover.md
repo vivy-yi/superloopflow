@@ -3,7 +3,7 @@ name: discover
 description: Read-only discovery of all installed plugins and their capabilities (v0.4 — no manifest protocol)
 ---
 
-# /loop:discover (v0.4)
+# /superloopflow:discover (v0.4)
 
 **Read-only** auto-discovery of all installed Claude Code plugins and their capabilities. **No writes** to any third-party plugin directory.
 
@@ -22,7 +22,7 @@ description: Read-only discovery of all installed plugins and their capabilities
 ## Implementation (v0.4 — pure read-only)
 
 ```python
-# Pseudocode of what /loop:discover does internally
+# Pseudocode of what /superloopflow:discover does internally
 import json, re
 from pathlib import Path
 import yaml
@@ -118,5 +118,5 @@ Total: 22 plugins, 214 capabilities, 7/8 phases covered
 ## Usage
 
 ```
-/loop:discover
+/superloopflow:discover
 ```

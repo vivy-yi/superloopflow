@@ -1,6 +1,6 @@
 ---
 name: loop-run
-description: How to use /loop:run to bridge to OMC autopilot for full autonomous execution (idea to working code)
+description: How to use /superloopflow:run to bridge to OMC autopilot for full autonomous execution (idea to working code)
 ---
 
 # Loop Run (v0.5)
@@ -9,7 +9,7 @@ Bridge to **OMC `autopilot`** — full autonomous execution from idea to working
 
 ## Overview
 
-`/loop:run` takes a brief product idea and autonomously handles the full lifecycle:
+`/superloopflow:run` takes a brief product idea and autonomously handles the full lifecycle:
 - Requirements analysis
 - Technical design
 - Planning
@@ -34,9 +34,9 @@ Phase 5 (Cleanup) ← Phase 4 (Validation) ← Phase 3 (QA Cycles)
 
 ## When NOT to use
 
-- Exploration/brainstorming — use `/loop:brainstorm` or `/loop:plan`
+- Exploration/brainstorming — use `/superloopflow:brainstorm` or `/superloopflow:plan`
 - Single focused fix — use direct delegation
-- You want to review each step — use `/loop:plan` + `/loop:implement` instead
+- You want to review each step — use `/superloopflow:plan` + `/superloopflow:implement` instead
 
 ## The 5 Phases
 
@@ -85,9 +85,9 @@ Delete all state files on success:
 ## Usage
 
 ```bash
-/loop:run "build me a REST API for a bookstore inventory with CRUD"
-/loop:run "create a CLI tool that tracks daily habits with streak counting"
-/loop:run "build me something with authentication and rate limiting"
+/superloopflow:run "build me a REST API for a bookstore inventory with CRUD"
+/superloopflow:run "create a CLI tool that tracks daily habits with streak counting"
+/superloopflow:run "build me something with authentication and rate limiting"
 ```
 
 ## Better input = better output
@@ -109,25 +109,25 @@ Progress is preserved for resume.
 ## Resume after cancel
 
 ```bash
-/loop:run
+/superloopflow:run
 ```
 
 (again with same or no brief)
 
-## Integration with /loop:goal
+## Integration with /superloopflow:goal
 
 For large multi-goal projects:
 
 ```bash
-/loop:goal create-goals --brief "ship the API" \
+/superloopflow:goal create-goals --brief "ship the API" \
   --goal "Schema::Design and implement" \
   --goal "API::Build CRUD endpoints" \
   --goal "Auth::Add authentication"
 
 # Then run each goal through autopilot:
-/loop:goal complete-goals  # Gets next story
-/loop:run "build the schema story"  # Execute it
-/loop:goal checkpoint ...  # Mark complete
+/superloopflow:goal complete-goals  # Gets next story
+/superloopflow:run "build the schema story"  # Execute it
+/superloopflow:goal checkpoint ...  # Mark complete
 # Repeat...
 ```
 

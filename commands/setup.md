@@ -3,7 +3,7 @@ name: setup
 description: One-command setup of the LOOP ecosystem (v0.4 — read-only plugin discovery)
 ---
 
-# /loop:setup (v0.4)
+# /superloopflow:setup (v0.4)
 
 One-command setup of the LOOP-era development ecosystem. **Read-only** plugin discovery.
 
@@ -28,11 +28,11 @@ import json, re
 from pathlib import Path
 import yaml
 settings = json.loads(Path.home() / '.claude/settings.json').read_text())
-# ... (same as /loop:discover internals) ...
+# ... (same as /superloopflow:discover internals) ...
 "
 
 # 3. Print cheatsheet
-/loop:discover
+/superloopflow:discover
 
 # 4. Report gaps
 echo '⚠️  Phase 4 has no external provider (intentional — flow-orchestrator owns meta-docs)'
@@ -51,5 +51,5 @@ If a phase has 0 providers, the cheatsheet flags it. **Note**: Phase 4 (meta-doc
 ## Usage
 
 ```
-/loop:setup
+/superloopflow:setup
 ```

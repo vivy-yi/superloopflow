@@ -3,7 +3,7 @@ name: create-entry-files
 description: Create 5 zero-content entry point files (CLAUDE.md, AGENTS.md, etc.)
 ---
 
-# /loop:create-entry-files
+# /superloopflow:create-entry-files
 
 Implements Phase 4A of LOOP.md — the 5 entry files for AI tools.
 
@@ -26,5 +26,5 @@ Implements Phase 4A of LOOP.md — the 5 entry files for AI tools.
 ## Usage
 
 ```
-/loop:create-entry-files
+/superloopflow:create-entry-files
 ```

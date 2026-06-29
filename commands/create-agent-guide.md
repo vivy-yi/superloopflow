@@ -3,7 +3,7 @@ name: create-agent-guide
 description: Generate AGENT_GUIDE.md from template (interactively customized)
 ---
 
-# /loop:create-agent-guide
+# /superloopflow:create-agent-guide
 
 Implements Phase 4B of LOOP.md — the main agent contract.
 
@@ -27,5 +27,5 @@ Implements Phase 4B of LOOP.md — the main agent contract.
 ## Usage
 
 ```
-/loop:create-agent-guide
+/superloopflow:create-agent-guide
 ```

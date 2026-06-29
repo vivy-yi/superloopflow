@@ -1,6 +1,6 @@
 ---
 name: loop-harness
-description: How to use /loop:harness to bridge to ECC autonomous-agent-harness for persistent autonomous operation
+description: How to use /superloopflow:harness to bridge to ECC autonomous-agent-harness for persistent autonomous operation
 ---
 
 # Loop Harness (v0.5)
@@ -9,7 +9,7 @@ Bridge to **ECC `autonomous-agent-harness`** — persistent, self-directing agen
 
 ## Overview
 
-`/loop:harness` turns Claude Code into a persistent, self-directing agent using native features:
+`/superloopflow:harness` turns Claude Code into a persistent, self-directing agent using native features:
 - Crons for scheduled tasks
 - Dispatch for remote agents
 - Memory for cross-session persistence
@@ -142,11 +142,11 @@ type: project
 ## Usage
 
 ```bash
-/loop:harness setup       # Initialize harness components
-/loop:harness memory      # Set up persistent memory system
-/loop:harness cron        # Create a scheduled task
-/loop:harness dispatch    # Set up event-driven dispatch
-/loop:harness status      # Show current harness state
+/superloopflow:harness setup       # Initialize harness components
+/superloopflow:harness memory      # Set up persistent memory system
+/superloopflow:harness cron        # Create a scheduled task
+/superloopflow:harness dispatch    # Set up event-driven dispatch
+/superloopflow:harness status      # Show current harness state
 ```
 
 ## Setup MCP servers
@@ -172,26 +172,26 @@ In `~/.claude.json`:
 }
 ```
 
-## Integration with /loop:goal and /loop:run
+## Integration with /superloopflow:goal and /superloopflow:run
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Complete Loop Stack                       │
 │                                                             │
-│  /loop:goal    — What to achieve (durable goals)            │
-│  /loop:run     — How to execute (autonomous execution)      │
-│  /loop:harness — Keep it running (scheduling + memory)      │
+│  /superloopflow:goal    — What to achieve (durable goals)            │
+│  /superloopflow:run     — How to execute (autonomous execution)      │
+│  /superloopflow:harness — Keep it running (scheduling + memory)      │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 Example pipeline:
 ```bash
 # 1. Set goals that survive restarts
-/loop:goal create-goals --brief "build and maintain the API"
+/superloopflow:goal create-goals --brief "build and maintain the API"
 
-/loop:harness cron "0 9 * * 1-5" "morning standup: review PRs, check deploy status"
+/superloopflow:harness cron "0 9 * * 1-5" "morning standup: review PRs, check deploy status"
 
-/loop:run "build the API"  # Autonomous execution
+/superloopflow:run "build the API"  # Autonomous execution
 ```
 
 ## State files written

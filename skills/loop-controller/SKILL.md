@@ -1,11 +1,11 @@
 ---
 name: loop-controller
-description: State machine that drives /loop:next — decides the next phase based on state schema (v3.0)
+description: State machine that drives /superloopflow:next — decides the next phase based on state schema (v3.0)
 ---
 
 # Loop Controller (v3.0)
 
-State machine that drives `/loop:next`. Decides the next phase from the state schema — it's a **state machine, not a checklist**.
+State machine that drives `/superloopflow:next`. Decides the next phase from the state schema — it's a **state machine, not a checklist**.
 
 ## State Schema (Single Source of Truth)
 
@@ -126,7 +126,7 @@ def next_action(state):
 | If state shows... | Then next action is... |
 |--------------------|------------------------|
 | No `.git/` directory | **Phase 0:** `git init` + README + `.gitignore` |
-| `.git/` exists but no `.tools-inventory.yaml` | **Phase 0.5:** `/loop:detect-tools` |
+| `.git/` exists but no `.tools-inventory.yaml` | **Phase 0.5:** `/superloopflow:detect-tools` |
 | No `user_intent` captured | **Phase 1 PRE:** Ask user what they're trying to do |
 | `user_intent == "new feature"` AND no spec | **Phase 1:** `brainstorming` skill or `/omc:deep-interview` |
 | Spec exists but no scope/acceptance/risks | **Phase 2:** Manually enrich the spec |
@@ -197,6 +197,6 @@ State is persisted in `.loop-state/state.yaml` in the project root. The loop con
 ## Usage
 
 ```bash
-/loop:status    # Show current state
-/loop:next      # Decide and suggest next action
+/superloopflow:status    # Show current state
+/superloopflow:next      # Decide and suggest next action
 ```

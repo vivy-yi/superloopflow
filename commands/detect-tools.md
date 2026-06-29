@@ -3,7 +3,7 @@ name: detect-tools
 description: Phase 0.5 — Detect installed agentic tools, create .tools-inventory.yaml, run omc-doctor and harness-audit
 ---
 
-# /loop:detect-tools
+# /superloopflow:detect-tools
 
 Phase 0.5: Tools Inventory. Detect installed agentic tools, create `.tools-inventory.yaml`, run diagnostic checks.
 
@@ -89,5 +89,5 @@ EOF
 ## Usage
 
 ```
-/loop:detect-tools
+/superloopflow:detect-tools
 ```

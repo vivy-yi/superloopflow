@@ -3,9 +3,9 @@ name: next
 description: Decide and run the next phase based on current state
 ---
 
-# /loop:next
+# /superloopflow:next
 
-The loop controller. Reads state, decides next phase, runs the corresponding /loop:* command.
+The loop controller. Reads state, decides next phase, runs the corresponding /superloopflow:* command.
 
 ## Algorithm
 
@@ -17,5 +17,5 @@ The loop controller. Reads state, decides next phase, runs the corresponding /lo
 ## Usage
 
 ```
-/loop:next
+/superloopflow:next
 ```

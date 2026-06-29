@@ -2,7 +2,7 @@
   "name": "superloopflow",
   "displayName": "LOOP Workflow Orchestrator (flow-orchestrator)",
   "version": "0.5.0",
-  "description": "Unified LOOP-era development entry point. v0.4 uses READ-ONLY plugin discovery (no writes to third-party plugin directories). /loop:* commands dynamically route to whichever installed plugin provides the required capability. Zero-modification: works with any plugin that has plugin.json, commands/, and skills/ — no manifest protocol required.",
+  "description": "Unified LOOP-era development entry point. v0.4 uses READ-ONLY plugin discovery (no writes to third-party plugin directories). /superloopflow:* commands dynamically route to whichever installed plugin provides the required capability. Zero-modification: works with any plugin that has plugin.json, commands/, and skills/ — no manifest protocol required.",
   "author": {
     "name": "Dramatron Contributors"
   },
